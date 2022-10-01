@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Scripts -->
+    <script defer src="./js/main.js"></script>
+
+    <!-- Jqeury -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <main class="container">
+        <section class="field-login-screen">
+
+            <header>
+                <h3>Login</h3>
+            </header>
+
+            <div class="field-inputs">
+                <input class="input-style" id="name" type="text" placeholder="usuário">
+
+                <div class="field-password">
+                    <input class="input-style" id="field-input-password" type="password" placeholder="senha">
+                    <i class="fa fa-eye"></i>
+                    <i class="fa fa-eye-slash"></i>
+                </div>
+            </div>
+
+            <div class="field-btn">
+                <button class="btn-login">login</button>
+                <button class="btn-register">inscreva-se</button>
+            </div>
+
+            <div class="">
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <!-- Line break -->
+            <hr>
+
+            <div class="field-others">
+                <p>ou</p>
+                <p>Entrar utilizando:</p>
+                <a href="#">Google</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- Register screen -->
+        <!-- Only show this part when the user changes the kind of sing -->
+        <section class="field-register-screen">
+
+            <header>
+                <h3>Registre-se</h3>
+                <p>É fácil e rápido!</p>
+            </header>
+
+            <div class="field-inputs">
+                <input class="input-style" type="text" placeholder="Nome">
+                <input class="input-style" type="text" placeholder="Sobrenome">
+                <input class="input-style" type="text" placeholder="Celular ou email">
+                <input class="input-style" type="text" placeholder="Nova senha">
+                <div class="field-birth-date">
+                    <select class="field-month">
+                        <option>Jan</option>
+                        <option>Fev</option>
+                        <option>Mar</option>
+                        <option>Abr</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Ago</option>
+                        <option>Set</option>
+                        <option>Out</option>
+                        <option>Nov</option>
+                        <option>Dez</option>
+                    </select>
+                    <select class="field-day">
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                        <option>00</option>
+                    </select>
+                    <select class="field-year">
+                        <option>1900</option>
+                        <option>...</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                <div class="field-genrer">
+                    <input type="radio" name="genrer" id="field-input-female">
+                    <label for="field-input-female">Feminino</label>
+
+                    <input type="radio" name="genrer" id="field-input-male">
+                    <label for="field-input-male">Masculino</label>
+
+                    <input type="radio" name="genrer" id="field-input-custom-genrer">
+                    <label for="field-input-custom-genrer">Personalizado</label>
+
+                    <!-- Se selecionar personalizado habilitar opção abaixo -->
+
+                    <div class="field-custom-genrer">
+                        <select>
+                            <option value="aaa" disabled>Selecione um pronome</option>
+                            <option value="">Femino: "Ela está linda!"</option>
+                            <option value="">Masculino: "Ele está lindo!"</option>
+                            <option value="">Neutro: "Ele(a) está lindo(a)!"</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="btn-register">Cadastre-se</button>
+
+            <div field-login-screen>
+                <a id="login-screen" href="#">Já tem uma conta?</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

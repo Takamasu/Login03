@@ -1,0 +1,154 @@
+/* Google Fonts - Roboto - font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    background: linear-gradient(to left, rgb(0, 0, 0, 0.9) 5%, rgb(20, 20, 0), rgb(0, 0, 0, 0.9) 95%);
+}
+
+main section {
+    background: yellow;
+    color: rgb(0, 0, 0, 0.9);
+    height: 50vh;
+    width: 30vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.container .field-login-screen header {
+    background-color: red;
+    color: yellow;
+    text-shadow: blue;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    text-align: center;
+    height: 50px;
+    padding: 15px;
+}
+
+/* Input Login  */
+main section .field-inputs {
+    width: 100%;
+}
+
+main section .field-inputs input {
+    width: 100%;
+    padding: 15px;
+    margin: 1px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    text-align: center;
+}
+
+main section .field-inputs input:focus {
+    background: rgb(250, 250, 250);
+    border: 1px solid rgb(240, 240, 240);
+    color: rgb(50, 50, 50);
+}
+
+main section .field-inputs input::-webkit-input-placeholder {
+    letter-spacing: .2em;
+    text-align: center;
+    transition: .3s;
+}
+
+main section .field-inputs input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+main section div .field-password {
+    position: relative;
+}
+
+main section div .field-password i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: rgb(200, 200, 200);
+    font-size: 15px;
+}
+
+main section div div .fa-eye {
+    display: none;
+}
+
+/* Buttons */
+
+main section .field-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+main section .btn-login,
+main section .btn-register {
+    padding: 15px;
+    margin: 1;
+    background-color: white;
+    color: rgb(50, 50, 50);
+    border: 1px solid transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+main section .btn-login:hover,
+main section .btn-register:hover {
+    background-color: rgb(245, 245, 245);
+    color: rgb(100, 100, 100);
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+main section .btn-login:active,
+main section .btn-register:active {
+    background-color: white;
+    color: rgb(240, 240, 240);
+}
+
+/* Register screen OFF */
+main .field-register-screen {
+    display: none;
+}
+
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+@media only screen and (max-width: 765px) {
+
+    .field-login-screen,
+    .field-register-screen {
+        width: 95%;
+        height: 80%;
+        font-size: 5em;
+    }
+
+    * {
+        font-size: .7em;
+    }
+
+
+    button {
+        font-size: .5em;
+    }
+
+}
