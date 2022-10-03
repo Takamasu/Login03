@@ -34,3 +34,14 @@ eyePass.addEventListener('click', function () {
 
 });
 
+// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
+// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
+// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
+// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
+// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
+const genrerCustom = document.querySelector('#field-input-custom-genrer');
+const genrerOptions = document.querySelector('.field-custom-genrer').style.display = 'none';
+
+if (genrerCustom == 'checked') {
+    genrerOptions.style.display = 'flex';
+}

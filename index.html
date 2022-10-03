@@ -26,12 +26,12 @@
 
 <body>
 
-    <main class="container">
-        <section class="field-login-screen">
+    <main>
+        <header>
+            <h3>Login</h3>
+        </header>
 
-            <header>
-                <h3>Login</h3>
-            </header>
+        <section class="field-login-screen">
 
             <div class="field-inputs">
                 <input class="input-style" id="name" type="text" placeholder="usuário">
@@ -48,30 +48,24 @@
                 <button class="btn-register">inscreva-se</button>
             </div>
 
-            <div class="">
+            <div class="field-forgot">
                 <a href="#">Esqueceu sua senha?</a>
             </div>
-
-            <!-- Line break -->
-            <hr>
 
             <div class="field-others">
                 <p>ou</p>
                 <p>Entrar utilizando:</p>
-                <a href="#">Google</a>
-                <a href="#">Facebook</a>
-                <a href="#">LinkedIn</a>
+                <div>
+                    <a href="#"><i class="fa-brands fa-square-google-plus"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
             </div>
         </section>
 
         <!-- Register screen -->
         <!-- Only show this part when the user changes the kind of sing -->
         <section class="field-register-screen">
-
-            <header>
-                <h3>Registre-se</h3>
-                <p>É fácil e rápido!</p>
-            </header>
 
             <div class="field-inputs">
                 <input class="input-style" type="text" placeholder="Nome">
@@ -133,15 +127,17 @@
                     </select>
                 </div>
                 <div class="field-genrer">
-                    <input type="radio" name="genrer" id="field-input-female">
-                    <label for="field-input-female">Feminino</label>
+                    <div>
+                        <input type="radio" name="genrer" id="field-input-female">
+                        <label for="field-input-female">Feminino</label>
 
-                    <input type="radio" name="genrer" id="field-input-male">
-                    <label for="field-input-male">Masculino</label>
+                        <input type="radio" name="genrer" id="field-input-male">
+                        <label for="field-input-male">Masculino</label>
 
-                    <input type="radio" name="genrer" id="field-input-custom-genrer">
-                    <label for="field-input-custom-genrer">Personalizado</label>
+                        <input type="radio" name="genrer" id="field-input-custom-genrer">
+                        <label for="field-input-custom-genrer">Personalizado</label>
 
+                    </div>
                     <!-- Se selecionar personalizado habilitar opção abaixo -->
 
                     <div class="field-custom-genrer">
