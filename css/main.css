@@ -213,3 +213,7 @@ main .field-login-screen .field-others div a .fa-linkedin:hover {
 main .field-register-screen {
     display: none;
 }
+
+main .field-register-screen .field-custom-genrer {
+    display: none;
+}

@@ -34,14 +34,19 @@ eyePass.addEventListener('click', function () {
 
 });
 
-// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
-// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
-// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
-// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
-// PRECISA VERIFICAR PARA QUE QUANDO FOR SELECIONADO A OPCAO CUSTOM APARECA O MENU OCULTO
-const genrerCustom = document.querySelector('#field-input-custom-genrer');
-const genrerOptions = document.querySelector('.field-custom-genrer').style.display = 'none';
+// Opções extras
+const gOptions = document.querySelector('.field-custom-genrer');
 
-if (genrerCustom == 'checked') {
-    genrerOptions.style.display = 'flex';
+// Generos
+const gMale = document.querySelector('.field-male');
+const gFemale = document.querySelector('.field-female');
+const gCustom = document.querySelector('#field-custom-genrer');
+
+function habilitar() {
+    if (document.querySelector('.field-custom').checked = true) {
+        gOptions.style.display = 'flex';
+    } else if (document.querySelector('.field-custom').checked = false) {
+        gOptions.style.display = 'none'
+    }
 }
+

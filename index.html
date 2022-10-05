@@ -18,6 +18,8 @@
 
     <!-- Scripts -->
     <script defer src="./js/main.js"></script>
+    <!-- Login script LOCAL STORAGE -->
+    <script src="./js/login.js" defer></script>
 
     <!-- Jqeury -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,7 +46,7 @@
             </div>
 
             <div class="field-btn">
-                <button class="btn-login">login</button>
+                <button class="btn-login" onclick="logar()">login</button>
                 <button class="btn-register">inscreva-se</button>
             </div>
 
@@ -127,25 +129,30 @@
                     </select>
                 </div>
                 <div class="field-genrer">
-                    <div>
-                        <input type="radio" name="genrer" id="field-input-female">
-                        <label for="field-input-female">Feminino</label>
+                    <div class="field-genre">
+                        <div class="field-female">
+                            <input type="radio" name="genrer" id="field-input-female">
+                            <label for="field-input-female">Feminino</label>
+                        </div>
 
-                        <input type="radio" name="genrer" id="field-input-male">
-                        <label for="field-input-male">Masculino</label>
+                        <div class="field-male">
+                            <input type="radio" name="genrer" id="field-input-male">
+                            <label for="field-input-male">Masculino</label>
+                        </div>
 
-                        <input type="radio" name="genrer" id="field-input-custom-genrer">
-                        <label for="field-input-custom-genrer">Personalizado</label>
-
+                        <div class="field-custom">
+                            <input onclick="habilitar()" type="radio" name="genrer" id="field-input-custom-genrer">
+                            <label for="field-input-custom-genrer">Personalizado</label>
+                        </div>
                     </div>
                     <!-- Se selecionar personalizado habilitar opção abaixo -->
 
                     <div class="field-custom-genrer">
                         <select>
-                            <option value="aaa" disabled>Selecione um pronome</option>
-                            <option value="">Femino: "Ela está linda!"</option>
-                            <option value="">Masculino: "Ele está lindo!"</option>
-                            <option value="">Neutro: "Ele(a) está lindo(a)!"</option>
+                            <option disabled>Selecione um pronome</option>
+                            <option>Femino: "Ela está linda!"</option>
+                            <option>Masculino: "Ele está lindo!"</option>
+                            <option>Neutro: "Ele(a) está lindo(a)!"</option>
                         </select>
                     </div>
                 </div>
