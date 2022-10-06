@@ -4,9 +4,11 @@ function logar() {
 
     if (email.value == "admin@admin.com" && senha.value == "admin") {
         localStorage.setItem("acesso", true);
-        window.location.href = 'index.html';
+        window.location.href = 'bem-vindo.html';
+
         alert("Bem vindo " + email)
     } else {
         alert("acesso negado")
     }
 }
+

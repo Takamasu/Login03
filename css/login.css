@@ -1,0 +1,243 @@
+/* Google Fonts - Roboto - font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+main {
+    background-color: rgb(15, 15, 15);
+    color: rgb(230, 230, 230);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+main header {
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+
+    background-color: rgb(30, 30, 30);
+    font-size: 1.8em;
+}
+
+main .field-login-screen,
+main .field-register-screen {
+    background-color: yellow;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 4rem;
+}
+
+main .field-login-screen div,
+main .field-register-screen div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 30vw;
+    margin: 5px;
+}
+
+main .field-login-screen div input,
+main .field-register-screen div input {
+    width: 100%;
+    margin-bottom: 1px;
+    padding: 1rem;
+}
+
+main .field-login-screen div .field-password {
+    position: relative;
+}
+
+main .field-login-screen div .field-password i {
+    position: absolute;
+    right: 1rem;
+    color: rgb(200, 200, 200);
+}
+
+/* Birth select options */
+main .field-register-screen .field-birth-date {
+    width: 100%;
+    margin: 0px;
+    flex-direction: row;
+}
+
+main .field-register-screen .field-birth-date select {
+    padding: 1rem;
+    width: 100%;
+    color: rgb(117, 117, 117);
+}
+
+main .field-register-screen .field-birth-date .field-day {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+main .field-register-screen .field-genrer div {
+    flex-direction: row;
+    color: rgb(0, 30, 255);
+}
+
+main .field-register-screen div div select {
+    width: 100%;
+    padding: 1rem;
+}
+
+main .field-register-screen div div select option {
+    height: 50px;
+    font-size: 1.2em;
+}
+
+/* btn configs */
+main .field-login-screen .field-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main .field-login-screen .field-btn button {
+    width: 50%;
+}
+
+main .field-register-screen button {
+    width: 100%;
+}
+
+/* general btn configs */
+button {
+    background-color: blue;
+    color: white;
+    padding: 1rem;
+    margin: 1px;
+    border-radius: 5px;
+    font-size: .8em;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(80, 80, 255);
+    letter-spacing: 0.2em;
+}
+
+button:active {
+    background-color: rgb(0, 30, 255);
+}
+
+main .field-login-screen .field-forgot a {
+    color: rgb(0, 30, 255);
+    transition: all .2s ease-in-out;
+}
+
+main .field-login-screen .field-forgot a:hover {
+    color: rgb(80, 80, 255);
+    letter-spacing: .1em;
+}
+
+main .field-login-screen .field-forgot a:active {
+    color: rgb(0, 30, 255);
+}
+
+/* Social media login */
+main .field-login-screen .field-others {
+    border-top: 1px solid rgb(30, 30, 30);
+}
+
+main .field-login-screen .field-others p {
+    color: rgb(0, 30, 255);
+}
+
+main .field-login-screen .field-others div {
+    flex-direction: row;
+}
+
+main .field-login-screen .field-others div a i {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 1px;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+}
+
+main .field-login-screen .field-others div a .fa-square-google-plus {
+    color: rgb(234, 67, 53);
+    transition: all 0.2s ease-in-out;
+}
+
+main .field-login-screen .field-others div a .fa-square-google-plus:hover {
+    color: white;
+    background-color: rgb(234, 67, 53);
+}
+
+
+main .field-login-screen .field-others div a .fa-square-facebook {
+    color: rgb(59, 89, 152);
+}
+
+main .field-login-screen .field-others div a .fa-square-facebook:hover {
+    color: white;
+    background-color: rgb(59, 89, 152);
+}
+
+main .field-login-screen .field-others div a .fa-linkedin {
+    color: rgb(10, 102, 194);
+}
+
+main .field-login-screen .field-others div a .fa-linkedin:hover {
+    color: white;
+    background-color: rgb(10, 102, 194);
+}
+
+/* Adaptive desgin for radio button options */
+
+.field-genre .field-male,
+.field-genre .field-female,
+.field-genre .field-custom {
+    background-color: white;
+
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+.field-genre .field-male {
+    margin: 1px;
+}
+
+.field-genre .field-male label,
+.field-genre .field-female label,
+.field-genre .field-custom label {
+    color: rgb(117, 117, 117);
+    font-size: .7em;
+}
+
+main .field-register-screen {
+    display: none;
+}
+
+main .field-register-screen .field-custom-genrer {
+    display: none;
+}
